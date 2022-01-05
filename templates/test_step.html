@@ -1,0 +1,64 @@
+<html>
+   <head>
+      <title>漏电流测试</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+            </head>
+            <script type="text/javascript" charset="utf-8" >
+                 
+               function load(){
+               button_text="{{button_text}}"
+               voltage="{{ feedback_voltage }}"
+               mode = "{{ feedback_mode }}"
+               document.all["indicator"].style.backgroundColor="#88ff7d";
+               if (mode=="未启动"){
+                  document.all["indicator"].style.backgroundColor="#e0e40d";
+               }
+               if (mode=="Err"){
+                  document.all["indicator"].style.backgroundColor="#8f0a48";
+                  document.all["next"].style.display="none"
+               }
+               if (button_text=="结束"){
+               document.all["next"].style.display="none";
+               }
+               }
+               function clicked(){
+                alert("点击成功!")
+                }
+            </script>
+         
+         <body onload="load();">
+         
+            <div id="header">
+               <a class="site-logo"><img src="/static/Philips_logo.png" width="250" height="45" alt="" left="0"></a>
+               <h1> Current Leakage Test</h1>
+               </div>
+         
+               <div id="nav"></div>
+               
+               <div id="section">
+                    <H4>Bay编号: {{ bay_number }}</H4>
+                    <H4>工厂: {{site}}</H4>
+                    <H4>产品: {{product}}</H4>
+                    <H4>型号: {{model}}</H4>
+                    <H4>步骤: {{step}}</H4>
+                    <H4>当前模式: {{current_mode}}</H4>
+                    <H4 id="indicator">实时模式: {{ feedback_mode }},{{ feedback_voltage }},{{ feedback_frequency }}</H4>
+                    <br>
+                    <a class="step-button" type="button" id='next' href="/select_site/{{site}}/select_product/{{product}}/select_model/{{model}}/test_step/{{ step|int +1}}" onClick="clicked()"><input type = "submit" value = {{button_text}}></a>
+                    <a class="stop-button" type="button" href="/stop" onClick="clicked()"><input type = "submit" value = 停止></a>
+               </div>
+
+               <div id="right">
+                  <H2>操作说明</H2>
+              <p>按照作业指导书进行作业。</p><br>
+              <p>提示:点击网页上的"下一步"按钮后, 会有1秒左右通讯延迟。</p><br>
+              </div>
+
+              <div id="footer">
+               Version: {{ version }}<br>
+               Philips Factory Suzhou<br>
+               Developer: Ryan.Sun@philips.com
+               </div>
+         
+            </body>
+         </html> 

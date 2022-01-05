@@ -1,0 +1,199 @@
+#SITE
+##Product
+###Model
+####-
+#####phase: str ABC,ACB,BAC.....SFC-A,SFC-B,SFC-C
+#####voltage: int
+#####frequency: int
+CN9A:
+ CT:
+  US-Product:
+   -
+    phase: ABC
+    voltage: 418 
+    frequency: 60
+  SY-Product:
+   -
+    phase: ABC
+    voltage: 418
+    frequency: 60
+   -
+    phase: ACB
+    voltage: 418
+    frequency: 60
+   -
+    phase: BAC
+    voltage: 418
+    frequency: 60
+   -
+    phase: CBA
+    voltage: 418
+    frequency: 60
+   -
+    phase: SFC-A
+    voltage: 418
+    frequency: 60
+   -
+    phase: SFC-B
+    voltage: 418
+    frequency: 60
+   -
+    phase: SFC-C
+    voltage: 418
+    frequency: 60
+ DXR:
+  DXR-Product-1:
+   -
+    phase: ABC
+    voltage: 418 
+    frequency: 60
+  DXR-Product-2:
+   -
+    phase: ABC
+    voltage: 418
+    frequency: 60
+   -
+    phase: ACB
+    voltage: 418
+    frequency: 60
+   -
+    phase: BAC
+    voltage: 418
+    frequency: 60
+   -
+    phase: CBA
+    voltage: 418
+    frequency: 60
+   -
+    phase: SFC-A
+    voltage: 418
+    frequency: 60
+   -
+    phase: SFC-B
+    voltage: 418
+    frequency: 60
+   -
+    phase: SFC-C
+    voltage: 418
+    frequency: 60
+
+
+CN9B:
+ CT:
+  US-Product:
+   -
+    phase: ABC
+    voltage: 418 
+    frequency: 50
+   -
+    phase: ACB
+    voltage: 418
+    frequency: 50
+   -
+    phase: BAC
+    voltage: 418 
+    frequency: 50
+   -
+    phase: CBA
+    voltage: 418 
+    frequency: 50
+   -
+    phase: SFC-A
+    voltage: 380 
+    frequency: 50
+   -
+    phase: SFC-B
+    voltage: 380
+    frequency: 50
+   -
+    phase: SFC-C
+    voltage: 380
+    frequency: 50
+  SY-Product:
+   -
+    phase: ABC
+    voltage: 418
+    frequency: 50
+   -
+    phase: ACB
+    voltage: 418
+    frequency: 50
+   -
+    phase: BAC
+    voltage: 418
+    frequency: 50
+   -
+    phase: CBA
+    voltage: 418
+    frequency: 50
+   -
+    phase: SFC-A
+    voltage: 418
+    frequency: 50
+   -
+    phase: SFC-B
+    voltage: 418
+    frequency: 50
+   -
+    phase: SFC-C
+    voltage: 418
+    frequency: 50
+ DXR:
+  DXR-Product-1:
+   -
+    phase: ABC
+    voltage: 418 
+    frequency: 50
+   -
+    phase: ACB
+    voltage: 418
+    frequency: 50
+   -
+    phase: BAC
+    voltage: 418 
+    frequency: 50
+   -
+    phase: CBA
+    voltage: 418 
+    frequency: 50
+   -
+    phase: SFC-A
+    voltage: 380 
+    frequency: 50
+   -
+    phase: AC
+    voltage: 380
+    frequency: 50
+   -
+    phase: SFC-A
+    voltage: 380
+    frequency: 50
+  DXR-Product-2:
+   -
+    phase: ABC
+    voltage: 418
+    frequency: 50
+   -
+    phase: ACB
+    voltage: 418
+    frequency: 50
+   -
+    phase: BAC
+    voltage: 418
+    frequency: 50
+   -
+    phase: CBA
+    voltage: 418
+    frequency: 50
+   -
+    phase: SFC-A
+    voltage: 418
+    frequency: 50
+   -
+    phase: AC
+    voltage: 418
+    frequency: 50
+   -
+    phase: AB
+    voltage: 418
+    frequency: 50

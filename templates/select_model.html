@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <title>漏电流测试</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+
+<script type="text/javascript" charset="utf-8" >
+    function clicked(){
+        alert("点击成功!")
+    }
+
+ </script>
+<body>
+
+<div id="header">
+<a class="site-logo"><img src="/static/Philips_logo.png" width="250" height="45" alt="" left="0"></a>
+<h1> Current Leakage Test</h1>
+</div>
+
+<div id="nav">
+    {% for site in sites%}
+    <a class="site-button" type="button" href="/select_site/{{site}}">
+        <span class="site-button-icon"><svg width="16" height="16" id="i_pos" viewBox="2 2 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 12.995V16.5a.5.5 0 01-.5.5H4a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5V13c0-.25-.25-.5-.5-.5H9c-.25 0-.5.25-.5.495z"/>
+            <path fill-rule="evenodd" d="M15 4.5V8l-2-2V4.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+            </svg></span>
+        <span class="site-button-text">{{ site }}</span></a>
+        <br><br>
+    {% endfor %}
+    </a><br><br><br><br><br><br><br><br><br><br><br>
+
+    <a class="site-button" type="button" href="/stop" onclick="clicked()">
+        <span class="site-button-icon"><svg width="16" height="16" id="i_pos" viewBox="2 2 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 12.995V16.5a.5.5 0 01-.5.5H4a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5V13c0-.25-.25-.5-.5-.5H9c-.25 0-.5.25-.5.495z"/>
+            <path fill-rule="evenodd" d="M15 4.5V8l-2-2V4.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+            </svg></span>
+        <span class="site-button-text">重置电源</span>
+    </a>
+</div>
+
+<div id="section">
+    <H4>Bay编号: {{ bay_number }}</H4>
+    <H4>工厂: {{site}}</H4>
+    <H4>产品: {{product}}</H4>
+    {% for model in models %}
+    <a class="model-button" type="button" href="/select_site/{{site}}/select_product/{{product}}/select_model/{{model}}/test_step/0" onClick="clicked()"><input type = "submit" value = {{model}}></a>
+    {% endfor %}
+
+</div>
+
+<div id="right">
+    <H2>操作说明</H2>
+<p>选择产品型号代码。<BR>
+</div>
+<div id="footer">
+    Version: {{ version }}<br>
+    Philips Factory Suzhou<br>
+    Developer: Ryan.Sun@philips.com
+    </div>
+
+</body>
+</html>

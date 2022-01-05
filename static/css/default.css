@@ -1,0 +1,197 @@
+h1{
+    display: inline-flex;
+    padding: 2px;
+    color: #000000;
+    font-size: 40px;
+}
+h2{
+    color: #000000;
+    font-size: 35px;
+}
+p{
+    color: #000000;
+    font-size: 20px;
+}
+#header {
+    background-color:lightgrey;
+    color:white;
+    text-align:left;
+    padding:10px;
+    white-space: space normal;
+    
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:700px;
+    width:200px;
+    float:left;
+    padding:20px;	      
+}
+#section {
+    width:800px;
+    float:left;
+    padding:20px;
+    height:700px;
+
+}
+#right {
+    width:420px;
+    float:right;
+    padding:20px;
+    height:700px;
+    background-color:#d6edff;
+}
+
+#footer {
+    background-color:#0e55D5;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+
+.site-button {
+	font-size: 30px;
+	border-radius: 5px;
+	border: solid 1px #3866A3;
+	color: #FFFFFF;
+	background: linear-gradient(180deg, #63B8EE 5%, #468CCF 100%);
+	text-shadow: 1px 1px 0px #528ecc;
+	box-shadow: inset 1px 1px 2px 0px #bbdaf7;
+	font-family: Arial;
+	cursor: pointer;
+	text-align: center;
+	user-select: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.site-button:active {
+	position: relative;
+	top: 1px;
+    background: linear-gradient(180deg, #cf7d46 5%, #eebd63 100%);
+}
+
+.site-button > span {
+	display: block;
+}
+.site-button-icon {
+	padding: 10px 10px;
+	border-right: 1px solid rgba(255, 255, 255, 0.16);
+	box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+}
+.site-button-text {
+	padding: 20px 20px;
+}
+
+        
+input[type="submit"] {
+    display: inline-block;
+    background-color: #82abf7;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    width: 800px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+        }
+        
+input[type="submit"].set {
+    display: inline-block;
+    background-color: #262e53;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+        }
+
+        .unlock-button {
+            font-size: 40px;
+            border-radius: 5px;
+            border: solid 1px #3866A3;
+            color: #FFFFFF;
+            background: linear-gradient(180deg, #63B8EE 5%, #468CCF 100%);
+            text-shadow: 1px 1px 0px #528ecc;
+            box-shadow: inset 1px 1px 2px 0px #bbdaf7;
+            font-family: Arial;
+            cursor: pointer;
+            text-align: center;
+            user-select: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .unlock-button:hover {
+            background: linear-gradient(180deg, #468CCF 5%, #63B8EE 100%);
+         }
+         .unlock-button:active {
+            position: relative;
+            top: 1px;
+         }
+         .unlock-button > span {
+            display: block;
+         }
+         .unlock-button-icon {
+            padding: 10px 10px;
+            border-right: 1px solid rgba(255, 255, 255, 0.16);
+            box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+         }
+         .unlock-button-icon svg {
+            vertical-align: middle;
+         }
+         .unlock-button-text {
+            padding: 20px 20px;
+         }
+         
+input {
+    display: inline-block;
+    background-color:#aaaaaa;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+    width: 800px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+ }
+
+ input[type="submit"].back {
+    display: inline-block;
+    background-color:#aaaaaa;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 30px;
+    padding: 0px;
+    width: 100px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+   }
